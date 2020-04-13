@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd ">
+
+    <bean id="employee1" class="com.MySpringBootDemo.SpringBootDemo.Employee">
+        <property name="eid" value="1234"/>
+        <property name="ename" value="Niecy"/>
+        <property name="eaddress" value="Magical Place"/>
+    </bean>
+
+    <bean id = "helloWorld" class = "com.MySpringBootDemo.SpringBootDemo.HelloWorld" init-method = "init"
+          destroy-method = "destroy">
+        <property name = "message" value = "Hello World!"/>
+    </bean>
+
+</beans>
